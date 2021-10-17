@@ -1,0 +1,97 @@
+<html>
+<head>
+    <title>GameShop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="source/style-s.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+</head>   
+<body id="main">
+    <header id="header">
+        <nav class="" id="nav-bar">
+            <div class="" id="nav-bar-contleft">
+                <img class="" id="header-img"src="source/logo.png" alt="Logo">
+                <h2>GgShop</h2>
+            </div>
+            <div class="" id="nav-bar-contright">
+                <p><a href="index.html" class="nav-bar-contright-item nav-link" id="">Go Back</a></p>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1 id="title">GgShop Survey Form</h1> 
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </div>
+        <form id="survey-form">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name"  placeholder="Enter your name" required/>
+
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your Email" required/>
+
+            <label id="number-label" for="age">Age</label>
+            <input type="number" name="age" id="number" min="8" max="99" placeholder="Enter your Age (optional)"/>
+
+            <p>Which option best describes your current role?</p>
+            <select id="dropdown" name="role" required="">
+                <option disabled="" selected="" value="">Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+              </select>
+            <div class="input-radio">
+            <p>Would you recommend Ggshop to a friend?</p>
+            <label><input name="user-recommend" value="definitely" type="radio" class="inputr" checked="">Definitely</label>
+            <label><input name="user-recommend" value="maybe" type="radio" class="inputr">Maybe</label>
+            <label><input name="user-recommend" value="not-sure" type="radio" class="inputr">Not sure</label>
+            </div>
+         
+                <p>
+                  How do you rate our Newsletter?
+                </p>
+                <select id="newsletter-rate" name="nrate" required="">
+                  <option disabled="" selected="" value="">Select an option</option>
+                  <option value="Very Good">Very Good</option>
+                  <option value="Good">Good</option>
+                  <option value="Meh">Meh</option>
+                  <option value="Needs fix">Needs fix</option>
+                  <option value="Bad">Bad</option>
+                  <option value="Very Bad">Very Bad</option>
+                </select>
+                <div class="input-radio">
+                <p>What products do you like to see in stock? (Check all that apply)</p>
+                <label><input name="prefer" value="Old Nintendo consoles" type="checkbox" class="input-checkbox">Old Nintendo consoles</label>
+                <label><input name="prefer" value="Old PlayStation consoles" type="checkbox" class="input-checkbox">Old PlayStation consoles</label>
+                <label><input name="prefer" value="Old Xbox consoles" type="checkbox" class="input-checkbox">Old Xbox consoles</label>
+                    <label><input name="prefer" value="Old Xbox games (clasic and 360)" type="checkbox" class="input-checkbox">Old Xbox games (clasic and 360)</label>
+                    <label><input name="prefer" value="Old Playstation games (Ps1, ps2 and ps3)" type="checkbox" class="input-checkbox">Old Playstation games (Ps1, ps2 and ps3)</label>
+                    <label><input name="prefer" value="Old Nintendo games (N64, Gc and wii )" type="checkbox" class="input-checkbox">Old Nintendo games (N64, Gc and wii )</label>
+                    <label><input name="prefer" value="More accessories" type="checkbox" class="input-checkbox">More accessories</label>
+                    <label><input name="prefer" value="Apple products" type="checkbox" class="input-checkbox">Apple products</label>
+                  </div>
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
+                                
+                    <button type="submit" id="submit">
+                      Submit
+                    </button>
+                  
+        </form>
+    </main>
+    <footer>
+        
+            <div>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Contact</a>
+                <a href="#">Survey</a>
+            </div>
+            <p>Copyright 2021, GenericGameShop</p>
+    
+    </footer>
+</body>
+</html>
